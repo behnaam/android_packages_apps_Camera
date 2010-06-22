@@ -139,8 +139,6 @@ public class CameraSettings {
                 (ListPreference) screen.findPreference(KEY_SCENE_MODE);
         ListPreference flashMode =
                 (ListPreference) screen.findPreference(KEY_FLASH_MODE);
-        ListPreference torchMode =
-                (ListPreference) screen.findPreference(FLASH_MODE_TORCH);
         ListPreference focusMode =
                 (ListPreference) screen.findPreference(KEY_FOCUS_MODE);
         ListPreference autoExposure =
@@ -185,10 +183,6 @@ public class CameraSettings {
         if (flashMode != null) {
             filterUnsupportedOptions(screen,
                     flashMode, mParameters.getSupportedFlashModes());
-        }
-        if (torchMode != null) {
-            filterUnsupportedOptions(screen,
-                    torchMode, mParameters.getSupportedTorchModes());
         }
         if (focusMode != null) {
             filterUnsupportedOptions(screen,
