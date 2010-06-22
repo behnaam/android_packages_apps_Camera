@@ -149,7 +149,7 @@
     </string-array>
 
     <string-array name="pref_camera_torchmode_entryvalues" translatable="false">
-        <item>on</item>
+        <item>torch</item>
         <item>off</item>
     </string-array>
 
